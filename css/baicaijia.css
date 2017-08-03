@@ -1,0 +1,82 @@
+#product > .product-nav {
+  overflow: hidden;
+}
+#product > .product-nav > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 1000px;
+}
+#product > .product-nav > ul > li {
+  float: left;
+}
+#product > .product-nav > ul > li > a {
+  background-color: #fff;
+  height: 40px;
+  display: block;
+  width: 100px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  position: relative;
+  text-decoration: none;
+}
+#product > .product-nav > ul > li > a.checked {
+  color: red;
+}
+#product > .product-nav > ul > li > a.checked:before {
+  content: '';
+  width: 50px;
+  height: 3px;
+  background-color: red;
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%);
+}
+#product > .product-list {
+  padding: 10px;
+}
+#product > .product-list > .media > .media-left > a > img {
+  width: 130px;
+  height: 130px;
+}
+#product > .product-list > .media > .media-body {
+  position: relative;
+}
+#product > .product-list > .media > .media-body > .normal-info {
+  height: 70px;
+  overflow: hidden;
+  font-size: 18px;
+}
+#product > .product-list > .media > .media-body > .normal-info > .product-name {
+  color: #333;
+  max-height: 50px;
+  overflow: hidden;
+}
+#product > .product-list > .media > .media-body > .normal-info > .product-price {
+  color: red;
+}
+#product > .product-list > .media > .media-body > .other-info {
+  position: absolute;
+  bottom: 5px;
+  font-size: 12px;
+  color: #a1a1a1;
+  width: 100%;
+}
+#product > .product-list > .media > .media-body > .other-info > .link {
+  float: right;
+}
+#product > .product-list > .media > .media-body > .other-info > .link > a {
+  display: block;
+  width: 70px;
+  height: 40px;
+  background-color: #ff5e5d;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+}
+#product > .product-list > .media > .media-body > .other-info > .remain {
+  color: #666;
+}

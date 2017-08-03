@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>慢慢卖二级分类页面</title>
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet/less" href="./css/common.less"/>
+    <link rel="stylesheet/less" href="css/category_product_list.less"/>
+    <script src = "libs/less/less.js"></script>
+    <script type="text/html" id="product-list-template">
+        {{each result as value i}}
+        <div class="media">
+            <div class="media-left">
+                <a href="category_product_detail.html?myid={{value.productId}}">
+                    {{#value.productImg}}
+                </a>
+            </div>
+            <div class="media-body">
+                <div class= "normal-info">
+                    <div class="product-name">{{value.productName}}</div>
+                    <span class="product-price">{{value.productPrice}}</span>
+                </div>
+                <div class="other-info">
+                    <span class="from-time">{{value.productQuote}}</span>
+                    <span class="comment">{{value.productCom}}</span>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+</head>
+<body>
+<header id="header">
+</header>
+
+<section id="search">
+</section>
+
+<section id="product">
+    <div class="product-list">
+
+    </div>
+    <div class="product-page">
+        <a class= "prev-page" href="#">上一页</a>
+        <div class="ui-select">
+            <select></select>
+        </div>
+        <a class="next-page" href="#">下一页</a>
+    </div>
+</section>
+<footer id="footer">
+</footer>
+
+</body>
+<script src = "libs/jquery/jquery.js"></script>
+<script src = "libs/bootstrap/js/bootstrap.js"></script>
+<script src = "libs/template/template.js"></script>
+<script src = "./js/common.js"></script>
+<script src = "./js/category_product_list.js"></script>
+</html>

@@ -1,0 +1,16 @@
+#sitenav {
+  padding: 10px;
+}
+#sitenav > .sitenav-list > a {
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  background-color: #f4f4f4;
+  text-align: center;
+  line-height: 34px;
+  border: 1px solid #bfbfbf;
+}
+#sitenav > .sitenav-list > a > img {
+  width: 18px;
+  height: 18px;
+}

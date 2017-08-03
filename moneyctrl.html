@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>省钱控</title>
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet/less" href="./css/common.less"/>
+    <link rel="stylesheet/less" href="css/moneyctrl.less"/>
+    <script src = "libs/less/less.js"></script>
+    <script type="text/html" id="moneyctrl-list-template">
+        {{each result as value i}}
+        <div class="media">
+            <div class="media-left">
+                <a href="moneyctrl_product_detail.html?myid={{value.productId}}">
+                    {{#value.productImgSm}}
+                </a>
+            </div>
+            <div class="media-body">
+                <div class= "normal-info">
+                    <span class="product-name">{{value.productName}}</span>
+                    <span class="product-price">{{value.productPinkage}}</span>
+                </div>
+                <div class="other-info">
+                    <span class="from-time">{{value.productFrom}} | {{value.productTime}}</span>
+                    <span class="comment">{{value.productComCount}}</span>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+</head>
+<body>
+<header id="header" class="back">
+</header>
+
+<section id="search">
+</section>
+
+<section id="product">
+    <div class="product-list">
+
+    </div>
+    <div class="product-page">
+        <a class= "prev-page" href="#">上一页</a>
+        <div class="ui-select">
+            <select></select>
+        </div>
+        <a class="next-page" href="#">下一页</a>
+    </div>
+</section>
+<footer id="footer">
+</footer>
+
+</body>
+<script src = "libs/jquery/jquery.js"></script>
+<script src = "libs/bootstrap/js/bootstrap.js"></script>
+<script src = "libs/template/template.js"></script>
+<script src = "./js/common.js"></script>
+<script src = "./js/moneyctrl.js"></script>
+</html>

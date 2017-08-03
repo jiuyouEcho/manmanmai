@@ -1,0 +1,127 @@
+@main-background-color:#ff841d;
+@background-color:#e6e6e6;
+@font-color:#a1a1a1;
+@font-color2:#5a5a5a;
+#menu{
+  padding: 10px;
+  >.row{
+    margin: 0px;
+    >div{
+      padding: 0;
+      text-align: center;
+      overflow: hidden;
+      min-height: 0;
+      transition: height 1s;
+      >a{
+        display: block;
+        >img{
+          width: 50px;
+          height: 50px;
+        }
+        >p{
+          color: @font-color2;
+          height: 20px;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
+#recommend{
+  >.recommend-title{
+    height: 35px;
+    background-color: @main-background-color;
+    padding: 0 10px;
+    >a{
+      height: 35px;
+      line-height: 35px;
+      display: block;
+      color: #fff;
+      position: relative;
+    }
+    a:before{
+      display: block;
+      content:"";
+      width: 23px;
+      height: 23px;
+      background-image: url("../images/more.png");
+      background-size: 23px 23px;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  >.recommend-list{
+    padding: 10px;
+    >.media{
+      >.media-left{
+        >a{
+          >img{
+            width: 99px;
+            height: 100px;
+          }
+        }
+      }
+      >.media-body{
+        position: relative;
+        >.normal-info{
+          height: 70px;
+          overflow: hidden;
+          font-size: 18px;
+          >.product-name{
+            color: #333;
+          }
+          >.product-price{
+            color: @main-background-color;
+          }
+        }
+        >.other-info{
+          position: absolute;
+          bottom: 10px;
+          font-size: 12px;
+          color: @font-color;
+          width: 100%;
+          >.from-time{
+
+          }
+          >.comment{
+            float: right;
+            position: relative;
+            //width: 20px;
+          }
+          .comment:before{
+            content: "";
+            width: 15px;
+            height: 15px;
+            background-image: url("../images/ic_comment.png");
+            background-size: 15px 15px;
+            background-repeat: no-repeat;
+            position: absolute;
+            right: 70px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+  }
+  >.recommend-more{
+    background-color: #f2f2f2;
+    padding: 10px 10px 20px 10px;
+
+    >a{
+      display: block;
+      height: 30px;
+      width: 100%;
+      border-radius: 5px;
+      background-color: #f8f8f8;
+      border: 1px solid @background-color;
+      color: @font-color2;
+      padding: 0 10px;
+      line-height: 30px;
+      text-align: center;
+    }
+  }
+}

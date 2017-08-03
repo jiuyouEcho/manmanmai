@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>国内折扣</title>
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet/less" href="./css/common.less"/>
+    <link rel="stylesheet/less" href="css/inlanddiscount.less"/>
+    <script src = "libs/less/less.js"></script>
+    <script type="text/html" id="inlanddiscount-list">
+    {{each result as value i}}
+        <div class="product-item">
+            {{#value.productImg}}
+            <div class="product-info">
+                <div class="product-name">{{value.productName}}</div>
+                <div class="product-price">{{value.productPrice}}</div>
+                <div class="from-time">{{value.productFrom}} | {{value.productTime}}</div>
+                <div class="product-time">{{value.productTime}}</div>
+            </div>
+        </div>
+    {{/each}}
+</script>
+</head>
+<body>
+<header id="header" class="back">
+</header>
+
+<section id="product">
+    <div class="product-list">
+    </div>
+    <div class="product-loading">
+        <img src="./images/loading.gif" alt=""/>
+        <div class="loading-finish">加载完成</div>
+    </div>
+</section>
+
+<footer id="footer">
+</footer>
+
+</body>
+<script src = "libs/jquery/jquery.js"></script>
+<script src = "libs/bootstrap/js/bootstrap.js"></script>
+<script src = "libs/template/template.js"></script>
+<script src = "./js/common.js"></script>
+<script src = "./js/inlanddiscount.js"></script>
+</html>

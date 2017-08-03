@@ -1,0 +1,68 @@
+<html>
+<head>
+    <script type="text/javascript" src="./libs/jquery/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p:nth-of-type(2)").toggleClass("intro big");
+            });
+        });
+    </script>
+    <style type="text/css">
+        .intro
+        {
+
+            color:red;
+
+        }
+        .big{
+            font-size: 50px;
+        }
+        [data-my-style]{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+<h1>This is a heading</h1>
+<p data-my-style="haha">This is a paragraph.</p>
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<button>向第一个 p 元素添加一个类</button>
+
+</body>
+<script>
+
+ // str='jpg|bmp|gif|ico|png';
+ // arr=str.split('|');//["jpg", "bmp", "gif", "ico", "png"]
+
+
+ // var myList=new Array('jpg','bmp','gif','ico','png');
+ // var portableList=myList.join('|');  //jpg|bmp|gif|ico|png
+
+    var str='ahji3o3s4e6p8a0sdewqdasj';
+    console.log(str.slice(2,5));  //ji3
+
+ var str='ahji3o3s4e6p8a0sdewqdasj';
+ console.log(str.substring(2,6));
+
+ var str="helloworld";
+
+ console.log(str.substring(2,5));
+
+ var str="helloworld";
+ console.log(str.substr(2,5));//llowo
+
+ var str="hello";
+ console.log(str.substring(1));//ello
+
+
+ $("button").bind("click",function(){
+     $("p").slideToggle();
+ });
+
+</script>
+</html>

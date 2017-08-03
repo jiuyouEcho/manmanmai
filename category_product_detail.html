@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>慢慢卖商品详情</title>
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet/less" href="./css/common.less"/>
+    <link rel="stylesheet/less" href="css/category_product_detail.less"/>
+    <script src = "libs/less/less.js"></script>
+
+    <script type="text/html" id="product-desc-template">
+        {{each result as value i}}
+            <div class="product-img">{{#value.productImg}}</div>
+            <div class="product-name">{{value.productName}}</div>
+            <div class="product-collect">
+                <a href="#"><img src="./images/sc.jpg" alt=""/></a>
+            </div>
+        {{/each}}
+    </script>
+
+    <script type="text/html" id="product-list-template">
+        {{each result as value i}}
+            <div class="product-compare-list">
+                {{#value.bjShop}}
+                <p>*实际价格以各网站列出的实施售价为准，我们提供的价格可能有数小时至数日的延迟。</p>
+            </div>
+        {{/each}}
+    </script>
+
+    <script type="text/html" id="product-comment-template">
+        {{each result as value i}}
+            <div class="product-comment-list">
+                <div class="normal-info">
+                    <span class="client-name">{{value.comName}}</span>
+                    <span class="buy-time">{{value.comTime}}</span>
+                </div>
+                <div class="buy-from">{{value.comFrom}}</div>
+                <div class="comment-info">{{value.comContent}}</div>
+                <div class="comment-reply"><a href="#">回复</a></div>
+            </div>
+        {{/each}}
+    </script>
+
+</head>
+<body>
+<header id="header">
+</header>
+
+<section id="search">
+</section>
+<!--路径导航-->
+<section id="product">
+    <nav>
+        <ol class="breadcrumb">
+            <li><a href="index.html">首页</a></li>
+        </ol>
+    </nav>
+    <div class="product-desc">
+        <!--<div class="product-img"><img src="./images/product_info.jpg" /></div>-->
+        <!--<div class="product-name">商品名称</div>-->
+        <!--<div class="product-collect">-->
+            <!--<a href="#"><img src="./images/sc.jpg" alt=""/></a>-->
+        <!--</div>-->
+    </div>
+    <div class="product-compare-buy">
+        <div class="product-compare-title">比价购买</div>
+
+   </div>
+    <div class="product-comment">
+        <div class="product-comment-title">优选网友评论</div>
+        <!--<div class="product-comment-list">-->
+            <!--<div class="normal-info">-->
+                <!--<span class="client-name">客户名字</span>-->
+                <!--<span class="buy-time">购买时间</span>-->
+            <!--</div>-->
+            <!--<div class="buy-from">购买自</div>-->
+            <!--<div class="comment-info">评论信息,我觉得我左边同桌是个傻逼，并且无药可救</div>-->
+            <!--<div class="comment-reply">回复</div>-->
+        <!--</div>-->
+    </div>
+    <div class="product-more">
+        <a href="#">查看更多评价</a>
+    </div>
+</section>
+
+
+<!--底部-->
+<footer id="footer">
+</footer>
+
+</body>
+<script src = "libs/jquery/jquery.js"></script>
+<script src = "libs/bootstrap/js/bootstrap.js"></script>
+<script src = "libs/template/template.js"></script>
+<script src = "./js/common.js"></script>
+<script src = "./js/category_product_detail.js"></script>
+</html>

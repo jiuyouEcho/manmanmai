@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>慢慢卖category</title>
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet/less" href="./css/common.less"/>
+    <link rel="stylesheet/less" href="css/category.less"/>
+    <script src = "libs/less/less.js"></script>
+
+    <script type="text/html" id="category-template">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            {{each result as value i}}
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{{i}}" aria-expanded="true" aria-controls="collapseOne" data-title-my-id="{{value.titleId}}">
+                                {{value.title}}
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse{{i}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body"></div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </script>
+
+    <script type="text/html" id="child-category-template">
+        <div class="row">
+            {{each result as value i}}
+                <div class="col-xs-4">
+                    <a href="category_product_list.html?categoryid={{value.categoryId}}" >{{value.category}}</a>
+                </div>
+            {{/each}}
+        </div>
+</script>
+</head>
+<body>
+<!--头部-->
+<header id="header">
+</header>
+<!--搜索部分-->
+<section id="search">
+</section>
+
+<!--category部分-->
+<section id="category">
+</section>
+
+<!--底部-->
+<footer id="footer">
+</footer>
+
+</body>
+<script src = "libs/jquery/jquery.js"></script>
+<script src = "libs/bootstrap/js/bootstrap.js"></script>
+<script src = "libs/template/template.js"></script>
+<script src = "./js/common.js"></script>
+
+<script src = "./js/category.js"></script>
+</html>

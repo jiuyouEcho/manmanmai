@@ -1,0 +1,35 @@
+#coupon {
+  padding-bottom: 20px;
+}
+#coupon > .coupon-list {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+#coupon > .coupon-list > .coupon-item {
+  width: 33.3%;
+  padding: 0;
+  text-align: center;
+}
+#coupon > .coupon-list > .coupon-item > .coupon-info {
+  padding: 10px;
+  height: 100px;
+  margin: 10px;
+  border: 1px solid #eeeeee;
+}
+#coupon > .coupon-list > .coupon-item > .coupon-info > a {
+  display: block;
+}
+#coupon > .coupon-list > .coupon-item > .coupon-info > a > img {
+  width: 50px;
+  height: 50px;
+}
+#coupon > .coupon-list > .coupon-item:nth-of-type(-n+2) > .coupon-info {
+  margin-right: 0;
+}
+#nav > .breadcrumb > li > a {
+  color: #000;
+}
+#nav > .breadcrumb > li + li:before {
+  content: '>';
+}

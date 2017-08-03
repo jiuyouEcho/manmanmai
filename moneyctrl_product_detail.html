@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>省钱控商品详情</title>
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet/less" href="./css/common.less"/>
+    <link rel="stylesheet/less" href="css/moneyctrl_product_detail.less"/>
+    <script src = "libs/less/less.js"></script>
+    <script type="text/html" id="moneyctrl-product-detail-template">
+        {{each result as value i}}
+        <div class="product-normal-info">
+            <div class="product-name">{{value.productName}}</div>
+            <div class="product-price">{{value.productPinkage}}</div>
+            <span>{{value.productFrom}}  {{value.productTime}}  {{value.productTips}}</span>
+        </div>
+        <div class="product-other-info">
+            <div class="media">
+                <div class="media-body">
+                    {{value.productInfo2}}
+                </div>
+                <div class="media-left">
+                    <a href="#">
+                        {{#value.productImgSm}}
+                    </a>
+                </div>
+            </div>
+            <div class="bigImg">{{#value.productImg2}}</div>
+        </div>
+        {{/each}}
+    </script>
+</head>
+<body>
+<header id="header" class="back">
+</header>
+
+<section id="product">
+    <div class="product-detail">
+    </div>
+    <div class="product-buy">
+        <a href="#">前往购买</a>
+    </div>
+</section>
+<div id="code">
+    <a href="#"><img src="./images/mmbweixin2.png" alt=""/></a>
+</div>
+<div id="comment">
+    <div class="comment-title">发表评论</div>
+    <div class="comment-container">
+        <textarea name="" id="txt" cols="30" rows="8">请发表您的评论...</textarea>
+        <div class="submit">
+            <a id= "btn">发表评论</a>
+        </div>
+    </div>
+    <div class="new-Comment">最新评论</div>
+    <div style="clear: both"></div>
+    <ul id="ul"></ul>
+    <div></div>
+</div>
+<footer id="footer">
+</footer>
+</body>
+<script src = "libs/jquery/jquery.js"></script>
+<script src = "libs/bootstrap/js/bootstrap.js"></script>
+<script src = "libs/template/template.js"></script>
+<script src = "./js/common.js"></script>
+<script src = "./js/moneyctrl_product_detail.js"></script>
+</html>

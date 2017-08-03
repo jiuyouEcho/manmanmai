@@ -1,0 +1,118 @@
+#product {
+  padding: 10px;
+}
+#product > .product-detail > .product-normal-info > .product-name {
+  font-size: 18px;
+  color: #5a5a5a;
+  font-weight: 700;
+}
+#product > .product-detail > .product-normal-info > .product-price {
+  color: #ff841d;
+  font-size: 16px;
+}
+#product > .product-detail > .product-normal-info > span {
+  font-size: 14px;
+  color: #999;
+}
+#product > .product-detail > .product-other-info {
+  padding-top: 10px;
+}
+#product > .product-detail > .product-other-info > .media > .media-body {
+  color: #606060;
+  text-align: center;
+}
+#product > .product-detail > .product-other-info > .media > .media-left > a > img {
+  width: 130px;
+  height: 130px;
+}
+#product > .product-detail > .product-other-info > .bigImg {
+  text-align: center;
+}
+#product > .product-detail > .product-other-info > .bigImg img {
+  width: 240px;
+  height: 240px;
+}
+#product > .product-buy {
+  padding: 10px;
+}
+#product > .product-buy > a {
+  display: block;
+  height: 30px;
+  background-color: #ff841d;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 5px;
+  line-height: 30px;
+}
+#code {
+  background-color: #F2F2F2;
+  padding: 20px 0;
+}
+#code > a > img {
+  width: 100%;
+}
+#comment {
+  text-align: center;
+  padding: 10px;
+}
+#comment > .comment-title {
+  text-align: left;
+  height: 42px;
+  font-size: 18px;
+}
+#comment > .comment-container {
+  position: relative;
+}
+#comment > .comment-container > textarea {
+  margin: 0;
+  width: 100%;
+  outline: none;
+  resize: none;
+  border: 0;
+  border: 4px solid #eceae8;
+  padding: 10px;
+}
+#comment > .comment-container > .submit {
+  height: 38px;
+  background-color: #fbfbfb;
+  position: absolute;
+  width: 100%;
+  bottom: 9px;
+  left: 0;
+  border-left: 4px solid #eceae8;
+  border-right: 4px solid #eceae8;
+  border-top: 2px solid #eceae8;
+}
+#comment > .comment-container > .submit > a {
+  float: right;
+  display: block;
+  height: 38px;
+  width: 100px;
+  background-color: #ff841d;
+  color: #ffffff;
+  text-align: center;
+  line-height: 38px;
+  font-size: 18px;
+}
+#comment > .new-Comment {
+  text-align: left;
+  height: 42px;
+  font-size: 18px;
+  line-height: 42px;
+}
+#comment > ul {
+  list-style: none;
+  margin-top: 30px;
+}
+#comment > ul > li {
+  width: 100%;
+  line-height: 30px;
+  border-bottom: 1px dashed #ccc;
+  text-align: left;
+}
+#comment > ul > li > input {
+  float: right;
+  outline: 0;
+  height: 30px;
+  padding: 0 10px;
+}

@@ -1,0 +1,100 @@
+@main-background-color:#ff841d;
+@background-color:#e6e6e6;
+@font-color:#a1a1a1;
+@font-color2:#5a5a5a;
+#product{
+  >.product-nav{
+    overflow: hidden;
+    >ul{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      width: 1000px;
+      >li{
+        float: left;
+        >a{
+          background-color: #fff;
+          height: 40px;
+          display: block;
+          width: 100px;
+          text-align: center;
+          line-height: 40px;
+          font-size: 16px;
+          position: relative;
+          text-decoration: none;
+        }
+        >a.checked{
+          color: red;
+        }
+        >a.checked:before{
+          content: '';
+          width: 50px;
+          height: 3px;
+          background-color: red;
+          position: absolute;
+          left: 50%;
+          bottom: 0px;
+          transform: translateX(-50%);
+        }
+
+      }
+    }
+  }
+  >.product-list{
+    padding: 10px;
+    >.media{
+      >.media-left{
+        >a{
+          >img{
+            width: 130px;
+            height: 130px;
+          }
+        }
+      }
+      >.media-body{
+        position: relative;
+        >.normal-info{
+          height: 70px;
+          overflow: hidden;
+          font-size: 18px;
+          >.product-name{
+            color: #333;
+            max-height: 50px;
+            overflow: hidden;
+
+          }
+          >.product-price{
+            color: red;
+          }
+        }
+        >.other-info{
+          position: absolute;
+          bottom: 5px;
+          font-size: 12px;
+          color: @font-color;
+          width: 100%;
+          >.coupon{
+
+          }
+          >.link{
+            float: right;
+            >a{
+              display: block;
+              width: 70px;
+              height: 40px;
+              background-color: #ff5e5d;
+              color: #fff;
+              text-align: center;
+              line-height: 40px;
+              border-radius: 5px;
+            }
+          }
+          >.remain{
+            color: #666;
+          }
+        }
+      }
+    }
+  }
+
+}
